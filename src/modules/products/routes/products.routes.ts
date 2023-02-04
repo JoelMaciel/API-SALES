@@ -23,9 +23,6 @@ productsRouter.post(
       price: Joi.number().required(),
       quantity: Joi.number().required(),
     },
-    [Segments.PARAMS]: {
-      id: Joi.string().uuid().required(),
-    },
   }),
   productsController.create,
 );
@@ -36,6 +33,9 @@ productsRouter.put(
       name: Joi.string().required(),
       price: Joi.number().required(),
       quantity: Joi.number().required(),
+    },
+    [Segments.PARAMS]: {
+      id: Joi.string().uuid().required(),
     },
   }),
   productsController.update,
