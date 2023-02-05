@@ -1,11 +1,12 @@
 import { celebrate, Joi, Segments } from 'celebrate';
 import { Router } from 'express';
 import UserController from '../controllers/UsersController';
+import isAuthenticated from '../middlewares/isAuthenticated';
 
 const usersRouter = Router();
 const usersController = new UserController();
 
-usersRouter.get('/', usersController.index);
+usersRouter.get('/', isAuthenticated, usersController.index);
 
 usersRouter.post(
   '/',
