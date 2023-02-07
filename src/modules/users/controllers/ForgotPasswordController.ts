@@ -1,4 +1,3 @@
-import { addWeeks } from 'date-fns';
 import { Request, Response } from 'express';
 import SendForgotPasswordEmailService from '../services/SendForgotPasswordEmailService';
 
