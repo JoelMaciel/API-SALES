@@ -3,7 +3,6 @@ import { compare, hash } from 'bcryptjs';
 import { getCustomRepository } from 'typeorm';
 import User from '../typeorm/entities/User';
 import UserRepository from '../typeorm/repositories/UsersRepository';
-import UserRepositoty from '../typeorm/repositories/UsersRepository';
 
 interface IRequest {
   user_id: string;
