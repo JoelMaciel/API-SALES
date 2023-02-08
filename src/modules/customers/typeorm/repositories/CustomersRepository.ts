@@ -9,6 +9,7 @@ class CustomersRepository extends Repository<Customer> {
         name,
       },
     });
+
     return customer;
   }
 
@@ -18,6 +19,7 @@ class CustomersRepository extends Repository<Customer> {
         id,
       },
     });
+
     return customer;
   }
 
@@ -27,6 +29,7 @@ class CustomersRepository extends Repository<Customer> {
         email,
       },
     });
+
     return customer;
   }
 }
