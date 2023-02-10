@@ -24,9 +24,15 @@ class OrdersProducts {
   product: Product;
 
   @Column()
-  price: number;
+  order_id: string;
 
   @Column()
+  product_id: string;
+
+  @Column('decimal')
+  price: number;
+
+  @Column('int')
   quatity: number;
 
   @CreateDateColumn()
