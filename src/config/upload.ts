@@ -20,6 +20,7 @@ const uploadFolder = path.resolve(__dirname, '..', '..', 'uploads');
 const tempFolder = path.resolve(__dirname, '..', '..', 'temp');
 
 export default {
+  driver: process.env.STORAGE_DRIVER,
   directory: uploadFolder,
   tempFolder,
   multer: {

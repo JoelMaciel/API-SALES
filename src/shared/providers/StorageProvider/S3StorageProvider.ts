@@ -8,10 +8,11 @@ export default class S3StorageProvider {
   private client: S3;
 
   constructor() {
-    this.client = new S3({
+    this.client = new aws.S3({
       region: 'us-east-1',
     });
   }
+
   public async saveFile(file: string): Promise<string> {
     const originalPath = path.resolve(uploadConfig.tempFolder, file);
 
