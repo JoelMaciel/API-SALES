@@ -38,7 +38,7 @@ export default {
 
   config: {
     aws: {
-      bucket: 'api-sales01',
+      bucket: 'api-vendas01',
     },
   },
 } as IUploadConfig;
