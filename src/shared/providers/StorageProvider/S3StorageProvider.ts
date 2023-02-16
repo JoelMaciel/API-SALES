@@ -9,8 +9,6 @@ export default class S3StorageProvider {
 
   constructor() {
     this.client = new aws.S3({
-      // accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-      // secretAccessKey: process.env.AWS_SECRET_ACESS_KEY,
       region: 'us-east-1',
     });
   }
