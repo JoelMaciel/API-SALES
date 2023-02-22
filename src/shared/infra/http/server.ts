@@ -8,7 +8,7 @@ import uploadConfig from '@config/upload';
 import { errors } from 'celebrate';
 import { pagination } from 'typeorm-pagination';
 import AppError from '@shared/errors/AppError';
-import '@shared/typeorm';
+import '@shared/infra/typeorm';
 import rateLimiter from './middlewares/rateLimiter';
 
 const app = express();
